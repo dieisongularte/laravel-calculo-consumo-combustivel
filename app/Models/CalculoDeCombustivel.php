@@ -13,6 +13,6 @@ class CalculoDeCombustivel extends Model
         $autonomia = $_GET['autonomia'];
 
         $valorGasto = ($distancia / $autonomia) * $precoGasolina;
-        return $valorGasto;
+        return number_format($valorGasto,2,",", ".");
     }
 }
